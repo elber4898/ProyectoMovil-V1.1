@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void doThis(Observable o, Object x) {
                 //Todo lo que yo quiera
                 Log.v("bichito", "xxx");
-                Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, clientObject.getYear_old()+"", Toast.LENGTH_SHORT).show();
             }
         });
         monitorObservable.addObserver(observerBind);
