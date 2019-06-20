@@ -12,6 +12,7 @@ import com.example.alumno.myapplication.helpers.Callback;
 import com.example.alumno.myapplication.helpers.MonitorObservable;
 import com.example.alumno.myapplication.helpers.ObserverBind;
 import com.example.alumno.myapplication.models.Client;
+import com.example.alumno.myapplication.presenters.MainPresenter;
 
 import java.nio.channels.ClosedByInterruptException;
 import java.util.Observable;
@@ -21,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnIngresar;
 
     //-----------------
-    MonitorObservable monitorObservable;
-    ObserverBind observerBind;
+   MainPresenter mainPresenter;
     Client clientObject;
 
     //-----------------
@@ -36,26 +36,14 @@ public class MainActivity extends AppCompatActivity {
         clientObject=new Client();
         clientObject.setYear_old(19);
 
-        observerBind=new ObserverBind();
-
-        monitorObservable=new MonitorObservable(clientObject);
-        observerBind.setCallback(new Callback(){
-            @Override
-            public void doThis(Observable o, Object x) {
-                //Todo lo que yo quiera
-                Log.v("bichito", "xxx");
-                Toast.makeText(MainActivity.this, clientObject.getYear_old()+"", Toast.LENGTH_SHORT).show();
-            }
-        });
-        monitorObservable.addObserver(observerBind);
-
+        mainPresenter = new MainPresenter();
 
         btnIngresar=(Button)findViewById(R.id.btnIngresar);
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 clientObject.setYear_old(clientObject.getYear_old()+1);
-                monitorObservable.setWachedValue(clientObject);
+                mainPresenter.monitorObservable.setWachedValue(clientObject);
             }
         });
 
