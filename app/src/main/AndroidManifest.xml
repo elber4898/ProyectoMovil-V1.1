@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ProductosVActivity" />
+        <activity android:name=".models.ProductosVActivity" />
         <activity android:name=".DetalleActivity"></activity>
     </application>
 

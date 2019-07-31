@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash_Activity"
-    android:background="@drawable/plash">
+    >
+
+    <ImageView
+        android:id="@+id/imageViewP"
+        android:layout_width="211dp"
+        android:layout_height="177dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plash" />
 
 </RelativeLayout>

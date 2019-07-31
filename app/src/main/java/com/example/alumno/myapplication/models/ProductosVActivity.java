@@ -1,12 +1,16 @@
-package com.example.alumno.myapplication;
+package com.example.alumno.myapplication.models;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
+
+import com.example.alumno.myapplication.Datos;
+import com.example.alumno.myapplication.DetalleActivity;
+import com.example.alumno.myapplication.R;
+import com.example.alumno.myapplication.adapters.Adaptador;
 
 import java.io.Serializable;
 import java.util.ArrayList;
