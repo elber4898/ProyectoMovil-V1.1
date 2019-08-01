@@ -1,4 +1,4 @@
-package com.example.alumno.myapplication.models;
+package com.example.alumno.myapplication;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

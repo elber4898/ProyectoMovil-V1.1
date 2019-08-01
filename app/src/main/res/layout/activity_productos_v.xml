@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".models.ProductosVActivity"
+    tools:context=".ProductosVActivity"
     android:orientation="vertical">
 
 

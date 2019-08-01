@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.alumno.myapplication.activities.LoginActivity;
+
 public class Splash_Activity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class Splash_Activity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent=new Intent(Splash_Activity.this, MainActivity.class);
+                Intent intent=new Intent(Splash_Activity.this, LoginActivity.class);
                 startActivity(intent);
 
             }
