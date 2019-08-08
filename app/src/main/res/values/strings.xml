@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">PELO DE OSO</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Iniciar Sesión</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="error_invalid_email">Su email es invalido</string>
+    <string name="error_invalid_password">Su contraseña es muy corta</string>
+    <string name="error_incorrect_password">Su contraseña es incorrecta</string>
+    <string name="error_field_required">este campo es requerido</string>
+    <string name="permission_rationale">"Se necesitan permisos de contactos para proporcionar compleciones de correo electrónico."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
